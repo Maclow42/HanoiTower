@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Create an animation that moves the disk to the top of the pillar */
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+.pillar{
+    width: 20px;
+    height: 200px;
+    background-color: brown;
+}
+
+.pillar::before{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 200px;
+    position: relative;
+    left: 5px;
+    top: 100px;
+    background-color: brown;
+    transform: rotate(90deg);
+}
+
+.disk{
+    height: 20px;
+    background-color: red;
+    position: relative;
+    margin: 1px;
+    transition: bottom 0.5s ease, left 0.5s ease;
+}
+
+.moving{
+    animation: move 1s linear forwards;
+}
