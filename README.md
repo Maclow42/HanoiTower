@@ -7,7 +7,7 @@ This project is an automated solution for the classic Tower of Hanoi puzzle impl
 3. No disk may be placed on top of a smaller disk.
 
 ## Demo
-Visit [Tower of Hanoi Solver](#maclow42.github.io/HanoiTower/) to see the automated solver in action.
+Visit [Tower of Hanoi Solver](maclow42.github.io/HanoiTower/) to see the automated solver in action.
 
 ## Features
 - Automated solution generation.
